@@ -1,0 +1,27 @@
+<!--HTML 5 introduced the <audio> tag which can be used to add an audio player to any webpage with controls like Play,
+    Pause, Volume controls, etc. When we use the <audio> tag or the <video> tag the browser creates a default player
+    with a default UI, that looks very basic. This is the default user interface for any audio player, with slight 
+    differences browser-wise. But if you are building a website where you want to host your podcasts or if you want to 
+    build a simple website to host your original music, having this dull audio player will be a big turn-off.
+    But how can we style this audio player, when this is created by the browser. The Play and Pause button, the volume 
+    controls, timer, everything is created by the browser internally, we just have to use a simple <audio> tag. Well, that
+    is what this project is about. In this project, you will not only just learn to style the default audio player, but you
+     will also learn how you can find the right classes used in any readymade HTML component and then add style to it to 
+     override the default style.--->
+
+<!doctype html>
+	<head>
+		<title>HTML/CSS Modern Music Player</title>
+		<link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="player-box">
+			<div class="player-img">
+				<img src="https://bit.ly/3AteiOL" id="track-img"/>
+			</div>
+			<div class="player-controls">
+				<audio src= "https://bit.ly/3v8yOn2" controls>Your browser does not support the audio element.</audio>
+			</div>
+		</div>
+	</body>
+</html>

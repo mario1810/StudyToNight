@@ -1,0 +1,75 @@
+/*
+ you have to do two basic things.
+Provide a background color to the complete webpage by applying style on the body tag. The background color should be #F9F9F9
+Also, as we have used an <audio> tag, make the audio player occupy the entire width by applying style using the audio element selector.
+*/
+body{
+    background-color:#F9F9F9; 
+}
+audio{
+    width: 100%;
+}
+
+/*************************************************************Audio Player Card Layout***************************************/
+
+/*Use the player-box selector and provide the following styling to the player box:
+
+The width of the player should be 300px.
+We want the player box to have some shadow. The shadow should be on the right side of the player with a 2px offset, the shadow should be at the bottom of the player box with offset 3px, the blur amount should be 2px and the spread should be 1px. The color of the shadow will be #CCC.
+Provide 10px padding to the player so that the track image and the player is not sticking to the walls of the player box.
+Make the corners of the player box rounded with a radius of 10px.
+And the background color of the player should be white. You can use the value white or #FFF or #FFFFFF.*/
+.player-box{
+    width:300px;
+    box-shadow:2px 3px 2px 1px #CCC;
+    padding:10px;
+    border-radius:10px;
+    background-color:white;
+}
+/*Now use the track-img selector and provide the following styling:
+
+We will keep the width of the image too as 300px.
+But make the image adjust its height automatically.
+Make the corners of the track image rounded with a radius of 5px.
+Provide a space or margin below the image only using the specific margin property. The space should be 10px.
+This step is a little lengthy, but you can do it. The CSS properties used here are the simple ones.*/
+#track-img{
+    width:300px;
+    height:auto;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+/*
+Audio Player Timers
+
+URL for CSS Selectors example: Click Here
+Stackoverflow answer: https://stackoverflow.com/a/33948255/2495826
+While there is so much that we can do, let's keep things simple and just change the size of the text to 12px for both Audio player time display.
+Do not provide the CSS property twice, specify both the selectors together and then provide the CSS property to update the text size only once
+*/
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    font-size:12px;
+}
+/*
+Just like we styled the playback time and the time remaining elements using the specific CSS selectors, we can style the Play button too.
+The CSS selector for the play button is audio::-webkit-media-controls-play-button
+Adding too much style might ruin our minimalistic design approach. So let's just add a little styling.
+We want to give a colored and circular button-like feeling to the play button, You have to use two CSS properties, 
+one to change the background color to #8FE1A2 and the second one to make the corners of the element round to make it look circular. 
+We think a value of 15px radius will do the trick.
+*/
+audio::-webkit-media-controls-play-button{
+    background-color:#8FE1A2;
+    border-radius: 15px;
+}
+
+/*
+Style the Volume/Mute button just like the Play button with the background color as #D6D1F5
+That's it, it should look exactly the same as the Play button but with a different color.
+The selector to be used is audio::-webkit-media-controls-mute-button.
+*/
+audio::-webkit-media-controls-mute-button{
+    background-color:#D6D1F5 ;
+    border-radius: 15px;
+}
