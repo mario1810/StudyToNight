@@ -1,0 +1,55 @@
+body {
+    background-color: #F9F9F9;
+    font-family: arial;
+}
+
+#stopwatch {
+    box-shadow: 2px 2px 3px 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+#stopwatch-name {
+    font-family: Courier;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+#timer {
+    font-size: 40px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50px;
+    color: #8FE1A2;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    border:0;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    border-radius:5px;
+    box-shadow: 2px 2px 3px 1px #ccc;
+    cursor:pointer;
+}
+
+#button-start {
+    background-color: #4535AA;
+    color:white;
+}
+
+#button-stop {
+    background-color: #FFB643;
+    color:black;
+}
+
+#button-reset {
+    background-color: #ED639E;
+    color:white;
+}
