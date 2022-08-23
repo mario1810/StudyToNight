@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraLayout</title>
+</head>
+<body>
+    <!--Tables allow us to arrange the data into rows and columns-->
+    <table border="1px" width="75%">
+        <!--Input field to represent the calculator screen (position)-->
+        <tr height="50px">
+            <!--Input has to use the complete space inside the column, colspan is used to 
+            the first column-row ocupe the same space that  second row-4columns-->
+            <td colspan="4"> <input type="text" style="width: 95%;height: 50px;"/></td>
+        </tr>
+        <!--Crating buttons for entering  numbers and operators-->
+        <tr height="50px">
+            <td><button style="width:100%;height: 50px;">7</button></td>
+            <td><button style="width:100%;height: 50px;">8</button></td>
+            <td><button style="width:100%;height: 50px;">9</button></td>
+            <td><button style="width:100%;height: 50px;">*</button></td>  
+        </tr>
+        <tr height="50px">
+            <td><button style="width:100%;height: 50px;">4</button></td>
+            <td><button style="width:100%;height: 50px;">5</button></td>
+            <td><button style="width:100%;height: 50px;">6</button></td>
+            <td><button style="width:100%;height: 50px;">/</button></td>
+        </tr>
+        <tr height="50px">
+            <td><button style="width:100%;height: 50px;">1</button></td>
+            <td><button style="width:100%;height: 50px;">2</button></td>
+            <td><button style="width:100%;height: 50px;">3</button></td>
+            <td><button style="width:100%;height: 50px;">-</button></td>
+        </tr>
+        <tr height="50px">
+            <td><button style="width:100%;height: 50px;">0</button></td>
+            <td><button style="width:100%;height: 50px;">.</button></td>
+            <td><button style="width:100%;height: 50px;">=</button></td>
+            <td><button style="width:100%;height: 50px;">+</button></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
