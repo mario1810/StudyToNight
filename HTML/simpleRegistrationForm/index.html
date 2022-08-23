@@ -1,0 +1,91 @@
+<!--
+    In this project, we are going to create a Registration form using HTML. Because no website 
+    can be developed without a form because if you want to collect any sort of data from your website user, 
+    you will have to create a form.
+-->
+
+<!--If you want to make the form fields mandatory for any user, 
+    you can use the required attribute in the input fields.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>My Registration Form</h1>
+    <form>
+        <div>
+            <label>First Name</label>
+            <input type="text" name="fname">
+        </div>
+        <br />
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lname">
+        </div>
+        <br />
+        <div>
+            <!--The <input> tag will only create the circular radio button and the text that you see 
+            Male, Female, and Other is also created using the label tag.-->
+            <label>Gender</label>
+            <br />
+            <input type="radio" name="gender" />
+            <label>Male</label>
+            <br />
+            <input type="radio" name="gender" />
+            <label>Female</label>
+            <br />
+            <input type="radio" name="gender" />
+            <label>Other</label>
+            <br />
+        </div>
+        <br />
+        <div>
+            <label>Courses</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+        </div>
+        <br />
+        <!--The type attribute of the input field will have a value number, to take just numeric values.-->
+        <div>
+            <label>Mobile Number</label>
+            <input type="number" name="mobile" />
+        </div>
+        <br />
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" />
+        </div>
+        <br />
+        <!--Now we are going to create a password field for that email address. A password field can have a 
+            value that contains numbers, alphabets, special characters, or a combination of all of it.-->
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" />
+        </div>
+        <br />
+        <!--ou know everybody's address is at least 3 to 4 lines long and the input text field is not the right 
+            field for long text inputs. So instead of using the <input> tag, we use the <textarea> tag for lengthy 
+                and descriptive inputs-->
+        <div>
+            <label>Address</label>
+            <textarea rows="3" cols="30"></textarea>
+        </div>
+        <br/>
+        <!--Once the user has filled all the required data within the input fields, how will the user submit the form? 
+             using the Submit button.-->
+        <div>
+            <input type="submit" value="submit"/>
+        </div>
+    </form>
+</body>
+
+</html>
