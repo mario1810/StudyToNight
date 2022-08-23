@@ -1,0 +1,83 @@
+<!--We will use the CSS flexbox concept to make the portfolio design responsive-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <div id="nav-brand">
+            <h3>Who Am I?</h3>
+        </div>
+        <div id="nav-options">
+            <span><a href="#personal">About Me</a></span>
+            <span><a href="#work">Portfolio</a></span>
+            <span><a href="#contact">Contact Me</a></span>
+        </div>
+    </nav>
+    <!-- Profile info -->
+    <div id="personal">
+        <div class="user-info">
+            <h1>Abhishek Ahlawat</h1>
+            <p>Hi Visitor! I am the guy who created Studytonight, the Interactive courses and even this project that you
+                are doing right now.</p>
+        </div>
+
+        <div class="user-pic">
+            <img src="https://bit.ly/3oIs4Lj" alt="" class="img-responsive img-circle" />
+        </div>
+    </div>
+    <!--As we are creating multiple sections in our portfolio webpage, so we should have some heading to mark each section. 
+    For this let's use <div> tags to provide section heading in HTML code and use CSS to style this.-->
+    <div class="section-heading" id="work"><i class="bi bi-briefcase"></i>My Work</div>
+
+    <!-- Work Info -->
+    <!--We have created three columns in the Work(Portfolio) section to showcase 3 work samples, where each work 
+            sample has a title, an image(screenshot), and a small description of the project.-->
+    <div id="portfolio">
+        <div class="project-detail">
+            <h2 class="project-name">Twitter</h2>
+            <div><img src="https://bit.ly/3ajBt3v" class="img-responsive" /></div>
+            <p class="project-info">Post an update/tweet in 140 words or more.</p>
+        </div>
+        <div class="project-detail">
+            <h2 class="project-name">Facebook</h2>
+            <div><img src="https://bit.ly/3Ai9Wdq" class="img-responsive" /></div>
+            <p class="project-info">A social network to stay in touch with friends.</p>
+        </div>
+        <div class="project-detail">
+            <h2 class="project-name">Quora</h2>
+            <div><img src="https://bit.ly/3Ai9Xhu" class="img-responsive" /></div>
+            <p class="project-info">Ask Questions, or Answer questions asked by others.</p>
+        </div>
+    </div>
+    <!-- Contact Us -->
+    <div class="section-heading" id="contact"><i class="bi bi-binoculars"></i>Get in touch!</div>
+    <div class="contact-us">
+        <div class="contact-info">
+            <div class="contact-fields"><input type="email" name="email" placeholder="Enter your email" /></div>
+            <div class="contact-fields"><textarea name="message" placeholder="Enter your message" rows=5></textarea>
+            </div>
+            <div class="contact-fields"><button>Send</button></div>
+        </div>
+    </div>
+    <!-- Social -->
+    <div id="social">
+        <div>Find me on Social media:</div>
+        <br />
+        <div>
+            <span class="social-icon"><i class="bi bi-facebook"></i></span>
+            <span class="social-icon"><i class="bi bi-instagram"></i></span>
+            <span class="social-icon"><i class="bi bi-linkedin"></i></span>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,277 @@
+/*Universal selector*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Courier;
+}
+/***********************************************************Nav Bar************************************************/
+
+/*
+The following styling is required for the nav element selector:
+Make it a flex container.
+The flex items inside it should be arranged horizontally. Use appropriate flex property to do so.
+Use the justify-content property to arrange the flex items where the brand text appears on the extreme left and the navigation options appear on the extreme right side of the flex container.
+Provide padding of 2%.
+The background color of the navigation bar should be #4535AA.
+And the text color should be white or #FFFFFF.
+*/
+nav{
+    display: flex;
+	flex-direction:row;   
+	justify-content:space-between;
+	padding:2%;
+	background-color:#4535AA;
+	color:white;
+}
+/*Inside the div with id attribute nav-options, we have the navigation options within the anchor tags,
+ hence while providing the styling we have to specify the a element selector along with #nav-options, like this:
+ Add the following style for the navigation options:
+Because we have used anchor tags to create the nav options, they will be underlined by default, remove the underlined text-decoration using CSS.
+Provide padding of 5px for the top and bottom and 10px for the right and left sides. You have to do this in a single line by providing two values for the padding property.
+The text color will be black or #000000
+The background color should be #FFB643
+Also, round the corners of the navigation options with a curve radius of 5px.
+ */
+ #nav-options a{
+	text-decoration: none;
+	padding:5px 10px;
+	color:black;
+	background-color:#FFB643;
+	border-radius:5px;
+}
+
+/******************************************************PROFILE INPUT*************************************************/
+/*We will start with styling the outer container <div> tag for  the personal section. Use the id selector to provide the following styling:
+
+Make the container a flex container (Hint in the video).
+Use the appropriate property to arrange the items horizontally inside the flex container.
+Provide padding of 30px on all sides.
+And the background color should be black(#000 or #000000).*/
+#personal{
+    display:flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color:black ;
+}
+/*the CSS flexbox concept can be used to space the flex items inside the flex container using the flex property. */
+/*Now coming to the user textual information section. This time use the class selector to provide the following styling:
+Use the flex property to make this section occupy 2/3rd width inside the flex container.
+The color of the text should be #EEE or #EEEEEE.
+And the padding inside the section should be 40px on all sides.*/
+.user-info{
+    flex:2;
+    color: #EEEEEE;
+    padding:40px;
+}
+/*
+Inside the <div> tag for user-info class, we have a paragraph tag with the description text, change the color of the text 
+to #FFB643 to highlight this text. Please make sure only the paragraph element inside the user-info <div> gets this style. 
+You cannot change anything in the HTML code.*/
+.user-info p{
+    color: #FFB643;
+}
+/*At last, coming to the user image section. Again use the class selector to provide the following styling:
+Use the flex property to make this section occupy 1/3rd width inside the flex container.
+And the padding inside the section should be 40px on all sides.*/
+.user-pic{
+    flex:1;
+    padding:40px;
+}
+
+    
+/*For the class selector img-responsive, do the following:
+    Specify the CSS property to make the element with this class occupy 100% width.
+    And make the element adjust its height automatically, maintaining the aspect ratio.*/
+    .img-responsive{
+        width:100%;
+        height:auto;
+    }
+    
+    /*
+    For the class selector img-circle, do the following:
+    Use border-radius property with the correct minimum value in percentage to make the image with this class appear completely circular.
+    To make an image circular, you can use the border-radius CSS property with value equal to height or width of the image, depending upon which corner to make round.*/
+    .img-circle{
+        border-radius:50%;
+    }
+/****************************************************** HEADING WORK INFO*************************************************/
+/*
+    Use the class selector, to provide the following style for the section-heading class:
+
+The text should be centrally aligned. Use the text alignment CSS property for this.
+Provide padding of 10px on all sides for the element.
+The size of the text should be 25px.
+The background color of this element should be #ED639E and the text color should be white or #FFF or #FFFFFF.
+*/
+.section-heading{
+    text-align:center;
+    padding:10px;
+    font-size:25px;
+    background-color:#ED639E;
+    color:white;
+}
+
+/****************************************************** WORK INFO*************************************************/
+		/*
+We will start with styling the container division which will be our flex container for this section. Use the id selector for the main portfolio (work) 
+section container division and provide the following styling:
+Make the container a flex container.
+Use the appropriate property to arrange the items horizontally inside the flex container.
+Use the correct property with a value in percentage to make this container occupy the entire available width of the browser window.
+The text and other elements inside this container should be centrally aligned.
+Provide padding of 5% on all sides.
+		*/
+		#portfolio{
+			display:flex;
+            flex-direction: row;
+			width:100%;
+			text-align:center;
+			padding:5%;
+		}
+/*
+First, we will provide styling for the class selector project-detail, because the <div> elements (three) 
+that form the main sections inside the #portfolio container have this class attribute value. Provide the following styling for this class selector:
+A margin of 10px on all sides. Use the right CSS property with a single value.
+There are three <div> elements using this class selector and they all must occupy equal width inside the container. Hence use the flex property with an appropriate value.
+Make the HTML element with this selector occupy 80% height available in the container division.
+*/
+        .project-detail{
+            flex:1;
+            margin:10px;
+            height:80%;
+        }
+	
+/*Next, we will provide styling for the heading for the work sample. Use the class selector for styling the <h2> element, and provide the following styling:
+The size of the text should be 1.5em
+Also, provide a margin of 20px at the bottom of the heading text. Use the specific margin property to specify a margin at the bottom only, where you only have to provide a single value.
+*/
+        .project-name{
+            font-size:1.5em;
+            margin-bottom:20px;
+        }
+		
+/*
+A last, we will provide styling for the paragraph element for the work sample description. Use the class selector for styling the <p> element, and provide the following styling:
+The size of the text should be 0.85em
+Also, provide a margin of 20px at the top of the paragraph text. Use the specific margin property to specify a margin at the top only, where you only have to provide a single value.
+*/
+		.project-info{
+			font-size:0.85em;
+			margin-top:20px;
+		}
+/****************************************************** CONTACT ME*************************************************/
+/*We will start providing style from the container that is holding the contact form. The <div> tag with class attribute contact-us holds the contact form.
+Use the class selector to provide styling for the container element:
+Make the container a flex container.
+Use the appropriate property to arrange the item in the center horizontally inside the flex container. This one is a little tricky, think of the correct property. Maybe it starts with justify. Can't help more!
+Use the correct property with a value in percentage to make this container occupy the entire available width of the browser window.
+The background color of the container should be black or #000.
+Provide padding of 30px on all sides.*/
+.contact-us{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+}
+
+/*Next, use the class selector contact-fields, which hold all the contact form fields and provide a margin of 10px on all sides to make the HTML elements have some margin between each other.*/
+.contact-fields{
+    margin: 10px;
+}
+
+/*Then, use the element selectors to style the input element and the textarea, together, and provide padding of 5px to them to make the fields a little spacious. (Hint: Watch the video till the end to see how to do this.)*/
+
+input, textarea {
+    padding:5px;
+}
+/*A last, we will provide styling for the button element:
+
+Provide padding of 5px.
+The background color of the button should be #FFB643.
+The button should not have any border. By default, HTML adds a border to the button element, but we can remove it using CSS, to make the button look more clean and stylish.
+Make the corners of the button round with a radius of 5px.
+Upon mouse hover, the cursor of the mouse should appear as a pointer.*/
+/*In our CSS code, we have to define special CSS properties for the devices with screen sizes less than 650px, 
+which are generally mobile devices, or small tabs.*/
+button{
+    padding:5px;
+    background-color: #FFB643;
+    border: 0;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/************************************************SOCIAL MEDIA LINKS*****************************************/
+
+/*
+     We will use an external CSS library to get icons that we will use on our webpage.
+    You fill find the Bootstrap Icons library here: https://icons.getbootstrap.com/
+    Open the URL given above, scroll down to the bottom and use the CDN to include the CSS for the bootstrap icons using the <link> tag. 
+    Paste it below the <title> tag inside the head section of our webpage.
+    Now, in the code editor, on the line numbers 218, 219, and 220, inside separate <span> tags, add the icons for Facebook, Instagram, 
+    and Linked In from the Bootstrap icons. Use the icon font way, where you use the <i> tag to use the icon.
+*/
+
+/*Once you are done with the above two things, it's time to write some CSS code to add styling to these icons and the social media link section.
+
+The <div> element with id attribute social holds the entire social media links section. Let's add some styling to it using the id selector:
+
+The background color for this section will be the same as the contact form section, which is black.
+The text color should be white so that we can see the text on black background.
+Provide padding of 40px on all sides, using the right property and a single value.
+Make the text and other elements inside this element to be aligned centrally.*/
+
+#social{
+    background-color: black;
+    color:white;
+    padding: 40px;
+    text-align: center;
+}
+/*Moving onto the class social-icon, use the class selector and provide the following styling:
+
+Add padding of 10px on the right side using the specific padding property to add padding on the right side only. We are doing this to add some space between the social media icons. We cannot use margin with the <span> tag because it is an inline tag and the margin property will have no effect on it.
+Change the color of the social media icons to #FFB643 to make them look nicer.*/
+.social-icon{
+    padding-right: 10px;
+    color:#FFB643;
+
+}
+
+/************************************************Make responsive *****************************************/
+/*In our CSS code, we have to define special CSS properties for the devices with screen sizes less than 650px, 
+which are generally mobile devices, or small tabs.*/
+@media(max-width:650px){
+/*****************Make the nav bar responsive */
+    nav{
+        flex-direction:column;
+    }
+
+    #nav-options a{
+        font-size: 0.75em;
+    }
+/******************************Make personal responsive /
+
+    /*At last, inside the @media section, use the correct flexbox CSS property to make the flex items (divisions inside the #personal division) arrange vertically for small screen size devices.*/
+    #personal{
+        flex-direction:column;
+    }
+/******************************Portfolio responsive */
+/*
+In the @media query block, add the CSS style rule to make the flex items responsive, that is inside the #portfolio <div> element.
+For this, you have to provide style for the #portfolio id selector.
+Use the correct flex CSS property to make the flex items inside the flex container arrange themselves vertically.
+*/
+    #portfolio{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
